@@ -1,0 +1,29 @@
+# -----------------------------
+# Data policy
+# -----------------------------
+
+# Ignore all files under data by default
+data/**
+
+# Keep directory structure
+!data/**/
+
+# Track imported example data (public artifacts)
+!data/import/**
+!data/import/**/
+
+# Keep visualization_result directory structure only (no files)
+!data/visualization_result/
+!data/visualization_result/**/
+
+# Keep placeholder files
+!.gitkeep
+
+
+# -----------------------------
+# Python / Jupyter / IDE
+# -----------------------------
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
